@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cd6ee159-dd70-447f-a1ef-9e9c9218113e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="/usr/local/Cellar/maven/3.6.3_1/libexec" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1eRpGIqAPyUkt3u7D2rvPD90Lz4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.3494253" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MainRunner">
+    <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AmandaApIMaven.App" />
+      <module name="MavenProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AmandaApIMaven.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.AmandaApIMaven.App" />
+      <module name="MavenProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.AmandaApIMaven.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DatabasesListMain (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AmandaApIMaven.DatabasesListMain" />
+      <module name="MavenProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AmandaApIMaven.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DatabasesListMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.AmandaApIMaven.App" />
+      <module name="MavenProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.AmandaApIMaven.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AmandaApIMaven.MainRunner" />
+      <module name="MavenProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AmandaApIMaven.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainRunner" />
+        <item itemvalue="Application.DatabasesListMain (1)" />
+        <item itemvalue="Application.App (1)" />
+        <item itemvalue="Application.DatabasesListMain" />
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cd6ee159-dd70-447f-a1ef-9e9c9218113e" name="Default Changelist" comment="" />
+      <created>1594294162026</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594294162026</updated>
+      <workItem from="1594294164620" duration="666000" />
+      <workItem from="1594346116714" duration="62000" />
+      <workItem from="1594346214026" duration="225000" />
+      <workItem from="1594346535353" duration="4000" />
+      <workItem from="1594716047090" duration="2184000" />
+      <workItem from="1594813670993" duration="2338000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="374" y="93" key="#DatabasesListMain" timestamp="1594815194826">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="374" y="93" key="#DatabasesListMain/0.0.1440.900@0.0.1440.900" timestamp="1594815194826" />
+    <state x="208" y="31" key="#Project_Structure" timestamp="1594717702200">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="208" y="31" key="#Project_Structure/0.0.1440.900/-142.-1080.1920.1080@0.0.1440.900" timestamp="1594717702200" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594718214964">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/-142.-1080.1920.1080@0.0.1440.900" timestamp="1594718214964" />
+    <state x="462" y="487" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1594815189037">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="462" y="487" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1594815189037" />
+    <state x="520" y="381" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1594716296925">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="520" y="381" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1440.900/-142.-1080.1920.1080@0.0.1440.900" timestamp="1594716296925" />
+    <state width="1346" height="78" key="GridCell.Tab.0.bottom" timestamp="1594816124830">
+      <screen x="0" y="23" width="1388" height="877" />
+    </state>
+    <state width="1398" height="238" key="GridCell.Tab.0.bottom/0.0.1440.900/-142.-1080.1920.1080@0.0.1440.900" timestamp="1594718223822" />
+    <state width="1398" height="296" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1594815438658" />
+    <state width="1346" height="78" key="GridCell.Tab.0.bottom/0.23.1388.877@0.23.1388.877" timestamp="1594816124830" />
+    <state width="1346" height="78" key="GridCell.Tab.0.center" timestamp="1594816124830">
+      <screen x="0" y="23" width="1388" height="877" />
+    </state>
+    <state width="1398" height="238" key="GridCell.Tab.0.center/0.0.1440.900/-142.-1080.1920.1080@0.0.1440.900" timestamp="1594718223820" />
+    <state width="1398" height="296" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1594815438657" />
+    <state width="1346" height="78" key="GridCell.Tab.0.center/0.23.1388.877@0.23.1388.877" timestamp="1594816124830" />
+    <state width="1346" height="78" key="GridCell.Tab.0.left" timestamp="1594816124829">
+      <screen x="0" y="23" width="1388" height="877" />
+    </state>
+    <state width="1398" height="238" key="GridCell.Tab.0.left/0.0.1440.900/-142.-1080.1920.1080@0.0.1440.900" timestamp="1594718223819" />
+    <state width="1398" height="296" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1594815438656" />
+    <state width="1346" height="78" key="GridCell.Tab.0.left/0.23.1388.877@0.23.1388.877" timestamp="1594816124829" />
+    <state width="1346" height="78" key="GridCell.Tab.0.right" timestamp="1594816124830">
+      <screen x="0" y="23" width="1388" height="877" />
+    </state>
+    <state width="1398" height="238" key="GridCell.Tab.0.right/0.0.1440.900/-142.-1080.1920.1080@0.0.1440.900" timestamp="1594718223822" />
+    <state width="1398" height="296" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1594815438658" />
+    <state width="1346" height="78" key="GridCell.Tab.0.right/0.23.1388.877@0.23.1388.877" timestamp="1594816124830" />
+    <state width="1398" height="296" key="GridCell.Tab.1.bottom" timestamp="1594815438660">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="294" key="GridCell.Tab.1.bottom/0.0.1440.900/-142.-1080.1920.1080@0.0.1440.900" timestamp="1594717798195" />
+    <state width="1398" height="296" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1594815438660" />
+    <state width="1398" height="296" key="GridCell.Tab.1.center" timestamp="1594815438659">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="294" key="GridCell.Tab.1.center/0.0.1440.900/-142.-1080.1920.1080@0.0.1440.900" timestamp="1594717798192" />
+    <state width="1398" height="296" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1594815438659" />
+    <state width="1398" height="296" key="GridCell.Tab.1.left" timestamp="1594815438659">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="294" key="GridCell.Tab.1.left/0.0.1440.900/-142.-1080.1920.1080@0.0.1440.900" timestamp="1594717798190" />
+    <state width="1398" height="296" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1594815438659" />
+    <state width="1398" height="296" key="GridCell.Tab.1.right" timestamp="1594815438660">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="294" key="GridCell.Tab.1.right/0.0.1440.900/-142.-1080.1920.1080@0.0.1440.900" timestamp="1594717798194" />
+    <state width="1398" height="296" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1594815438660" />
+    <state x="335" y="156" key="NewModule_or_Project.wizard" timestamp="1594814529680">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="335" y="156" key="NewModule_or_Project.wizard/0.0.1440.900@0.0.1440.900" timestamp="1594814529680" />
+    <state x="200" y="53" width="1223" height="722" key="SettingsEditor" timestamp="1594816168430">
+      <screen x="0" y="23" width="1388" height="877" />
+    </state>
+    <state x="208" y="31" key="SettingsEditor/0.0.1440.900/-142.-1080.1920.1080@0.0.1440.900" timestamp="1594718272035" />
+    <state x="208" y="31" width="1223" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1594815474035" />
+    <state x="200" y="53" key="SettingsEditor/0.23.1388.877@0.23.1388.877" timestamp="1594816168430" />
+  </component>
+</project>

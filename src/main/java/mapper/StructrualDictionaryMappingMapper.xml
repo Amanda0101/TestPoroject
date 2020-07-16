@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="DAO.StructrualDictionaryMappingDao">
+	<resultMap id="BaseResultMap" type="main.java.BEAN1.StructrualDictionaryMappingBean">
+		<id column="uuid" property="uuid" jdbcType="INTEGER"/>
+		<result column="definition_type" property="definitionType" jdbcType="VARCHAR"/>
+		<result column="definition_name" property="definitionName" jdbcType="VARCHAR"/>
+		<result column="structrual_dictionary_name" property="structrualDictionaryName" jdbcType="VARCHAR"/>
+		<result column="target_dictionary_name" property="targetDictionaryName" jdbcType="VARCHAR"/>
+		<result column="create_ts" property="createTs" jdbcType="TIMESTAMP"/>
+		<result column="create_user" property="createUser" jdbcType="VARCHAR"/>
+		<result column="last_mod_ts" property="lastModTs" jdbcType="TIMESTAMP"/>
+		<result column="last_mod_user" property="lastModUser" jdbcType="VARCHAR"/>
+	</resultMap>
+	<sql id="Base_Column_List">
+		uuid,definition_type,definition_name,structrual_dictionary_name,target_dictionary_name,create_ts,create_user,last_mod_ts,last_mod_user
+	</sql>
+	<insert id="insertRecord" parameterType="main.java.BEAN1.StructrualDictionaryMappingBean">
+		insert into structrual_dictionary_mapping(uuid,
+			definition_type,
+			definition_name,
+			structrual_dictionary_name,
+			target_dictionary_name,
+			create_ts,
+			create_user,
+			last_mod_ts,
+			last_mod_user)
+		values (#{uuid,jdbcType=INTEGER},
+			#{definitionType,jdbcType=VARCHAR},
+			#{definitionName,jdbcType=VARCHAR},
+			#{structrualDictionaryName,jdbcType=VARCHAR},
+			#{targetDictionaryName,jdbcType=VARCHAR},
+			#{createTs,jdbcType=TIMESTAMP},
+			#{createUser,jdbcType=VARCHAR},
+			#{lastModTs,jdbcType=TIMESTAMP},
+			#{lastModUser,jdbcType=VARCHAR})
+ </insert>
+	<insert id="insertSelective" parameterType="main.java.BEAN1.StructrualDictionaryMappingBean">
+		insert into structrual_dictionary_mapping
+		<trim prefix="(" suffix=")" suffixOverrides="," >
+			<if test="uuid != null" >
+				uuid,
+			</if>
+			<if test="definitionType != null" >
+				definition_type,
+			</if>
+			<if test="definitionName != null" >
+				definition_name,
+			</if>
+			<if test="structrualDictionaryName != null" >
+				structrual_dictionary_name,
+			</if>
+			<if test="targetDictionaryName != null" >
+				target_dictionary_name,
+			</if>
+			<if test="createTs != null" >
+				create_ts,
+			</if>
+			<if test="createUser != null" >
+				create_user,
+			</if>
+			<if test="lastModTs != null" >
+				last_mod_ts,
+			</if>
+			<if test="lastModUser != null" >
+				last_mod_user,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="uuid != null" >
+				#{uuid,jdbcType=INTEGER},
+			</if>
+			<if test="definitionType != null" >
+				#{definitionType,jdbcType=VARCHAR},
+			</if>
+			<if test="definitionName != null" >
+				#{definitionName,jdbcType=VARCHAR},
+			</if>
+			<if test="structrualDictionaryName != null" >
+				#{structrualDictionaryName,jdbcType=VARCHAR},
+			</if>
+			<if test="targetDictionaryName != null" >
+				#{targetDictionaryName,jdbcType=VARCHAR},
+			</if>
+			<if test="createTs != null" >
+				#{createTs,jdbcType=TIMESTAMP},
+			</if>
+			<if test="createUser != null" >
+				#{createUser,jdbcType=VARCHAR},
+			</if>
+			<if test="lastModTs != null" >
+				#{lastModTs,jdbcType=TIMESTAMP},
+			</if>
+			<if test="lastModUser != null" >
+				#{lastModUser,jdbcType=VARCHAR},
+			</if>
+		</trim>
+	</insert>
+	<delete id="deleteById" parameterType="java.lang.Integer">
+		delete from structrual_dictionary_mapping where uuid= #{uuid,jdbcType=INTEGER}
+	</delete>
+	<update id="updateByIdSelective" parameterType="main.java.BEAN1.StructrualDictionaryMappingBean">
+		update structrual_dictionary_mapping
+		<set>
+			<if test="definitionType != null" >
+				definition_type=#{definitionType,jdbcType=VARCHAR},
+			</if>
+			<if test="definitionName != null" >
+				definition_name=#{definitionName,jdbcType=VARCHAR},
+			</if>
+			<if test="structrualDictionaryName != null" >
+				structrual_dictionary_name=#{structrualDictionaryName,jdbcType=VARCHAR},
+			</if>
+			<if test="targetDictionaryName != null" >
+				target_dictionary_name=#{targetDictionaryName,jdbcType=VARCHAR},
+			</if>
+			<if test="createTs != null" >
+				create_ts=#{createTs,jdbcType=TIMESTAMP},
+			</if>
+			<if test="createUser != null" >
+				create_user=#{createUser,jdbcType=VARCHAR},
+			</if>
+			<if test="lastModTs != null" >
+				last_mod_ts=#{lastModTs,jdbcType=TIMESTAMP},
+			</if>
+			<if test="lastModUser != null" >
+				last_mod_user=#{lastModUser,jdbcType=VARCHAR},
+			</if>
+		</set>
+		where uuid= #{uuid,jdbcType=INTEGER}
+	</update>
+	<update id="updateById" parameterType="main.java.BEAN1.StructrualDictionaryMappingBean">
+		update structrual_dictionary_mapping set
+			definition_type=#{definitionType,jdbcType=VARCHAR},
+			definition_name=#{definitionName,jdbcType=VARCHAR},
+			structrual_dictionary_name=#{structrualDictionaryName,jdbcType=VARCHAR},
+			target_dictionary_name=#{targetDictionaryName,jdbcType=VARCHAR},
+			create_ts=#{createTs,jdbcType=TIMESTAMP},
+			create_user=#{createUser,jdbcType=VARCHAR},
+			last_mod_ts=#{lastModTs,jdbcType=TIMESTAMP},
+			last_mod_user=#{lastModUser,jdbcType=VARCHAR}
+		where uuid= #{uuid,jdbcType=INTEGER}
+	</update>
+	<select id="countRecord" resultType="java.lang.Integer">
+		select count(*) from structrual_dictionary_mapping
+	</select>
+	<select id="countSelective" parameterType="main.java.BEAN1.StructrualDictionaryMappingBean" resultType="java.lang.Integer">
+		select count(*) from structrual_dictionary_mapping where 1=1
+		<if test="uuid != null" >
+			and uuid=#{uuid,jdbcType=INTEGER}
+		</if>
+		<if test="definitionType != null" >
+			and definition_type=#{definitionType,jdbcType=VARCHAR}
+		</if>
+		<if test="definitionName != null" >
+			and definition_name=#{definitionName,jdbcType=VARCHAR}
+		</if>
+		<if test="structrualDictionaryName != null" >
+			and structrual_dictionary_name=#{structrualDictionaryName,jdbcType=VARCHAR}
+		</if>
+		<if test="targetDictionaryName != null" >
+			and target_dictionary_name=#{targetDictionaryName,jdbcType=VARCHAR}
+		</if>
+		<if test="createTs != null" >
+			and create_ts=#{createTs,jdbcType=TIMESTAMP}
+		</if>
+		<if test="createUser != null" >
+			and create_user=#{createUser,jdbcType=VARCHAR}
+		</if>
+		<if test="lastModTs != null" >
+			and last_mod_ts=#{lastModTs,jdbcType=TIMESTAMP}
+		</if>
+		<if test="lastModUser != null" >
+			and last_mod_user=#{lastModUser,jdbcType=VARCHAR}
+		</if>
+	</select>
+	<select id="maxId" resultType="java.lang.Integer">
+		select max(uuid) from structrual_dictionary_mapping
+	</select>
+	<select id="selectById" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+		select
+		<include refid="Base_Column_List"/>
+		from structrual_dictionary_mapping
+		where uuid= #{uuid,jdbcType=INTEGER}
+	</select>
+	<select id="selectAll" resultMap="BaseResultMap">
+		select * from structrual_dictionary_mapping
+	</select>
+</mapper>
