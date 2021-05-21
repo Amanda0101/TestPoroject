@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: AmandaApIMaven.MainRunner
+Class-Path: protobuf-java-3.6.1.jar commons-lang3-3.9.jar mysql-connecto
+ r-java-8.0.20.jar
+

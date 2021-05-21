@@ -2,10 +2,14 @@ package AmandaApIMaven;
 
 
 import Util.DbUtil;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 
+import java.io.FileInputStream;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.Properties;
 
 /**
  * Hello world!
@@ -13,10 +17,14 @@ import java.sql.Statement;
  */
 public class App 
 {
-
+    static final  Logger logger = Logger.getLogger(App.class);
 
     public static void main ( String[] args )
     {
+        Testlog();
+    }
+
+    public void mysqlTest(){
         String sql="SELECT uuid,policy_name,policy_type FROM policy_monitor.monitoring_policy where uuid='1271961172387565569'";
 //        String sql_1="delete from  monitoring_policy where uuid='1271961783829008386'";
         DbUtil dbUtil=new DbUtil();
@@ -40,9 +48,33 @@ public class App
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 
+    public static void Testlog() {
+        Properties prop=null;
+        FileInputStream fileInputStream=null;
+
+        try {
+//            prop.load(getClass().getClassLoader().getResourceAsStream("log4j.properties"));
+            PropertyConfigurator.configure("/Users/yanbinghuang/IdeaProjects/MavenProject/src/main/Resource/Common/log4j.properties");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+//        try {
+//            prop=new Properties();
+//            fileInputStream=new FileInputStream("/Users/yanbinghuang/IdeaProjects/MavenProject/src/main/Resource/Common/log4j.properties");
+//            prop.load(fileInputStream);
+//            PropertyConfigurator.configure(prop);//
+//        }catch (Exception e){
+//            e.printStackTrace();
+//        }
+
+        logger.debug("debug log msg");
+        logger.info("info log msg");
+        logger.warn("warn log msg");
+        logger.error("error log msg");
+
+    }
 
 
 

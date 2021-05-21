@@ -15,14 +15,13 @@ import java.sql.SQLException;
  **/
 public class UserDao {
 
-//    功能insert
-    public int insert(UserBean users)
-    {
-        int i=0;
+    //    功能insert
+    public int insert(UserBean users) {
+        int i = 0;
         DbUtil util = new DbUtil();
-        Connection conn=util.openConnection();//创建数据库连接
+        Connection conn = util.openConnection();//创建数据库连接
         String sql = "insert into Users (id , name, age, birthday, money) values(?,?,?,?,?)";//定义sql语句
-        PreparedStatement pstmt=null;
+        PreparedStatement pstmt = null;
         try {
             pstmt = (PreparedStatement) conn.prepareStatement(sql);
             pstmt.setInt(1, users.getId());
@@ -33,36 +32,35 @@ public class UserDao {
             i = pstmt.executeUpdate();
             pstmt.close();
             conn.close();
-        } catch (  SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
-            try{
+            try {
                 conn.rollback();
-            }catch(SQLException el){
+            } catch (SQLException el) {
                 el.printStackTrace();
             }
-        }finally{
+        } finally {
             util.closeConn(conn);
         }
         return i;
 
     }
 
-//    删除表中的某一条数据，返回删除条数int
-    public int delete(String id)
-    {
-        int i=0;
+    //    删除表中的某一条数据，返回删除条数int
+    public int delete(String id) {
+        int i = 0;
         DbUtil util = new DbUtil();
-        PreparedStatement pstmt=null;
-        Connection conn=util.openConnection();//创建数据库连接
+        PreparedStatement pstmt = null;
+        Connection conn = util.openConnection();//创建数据库连接
 //        Connection conn=util.getconnection();
-        String sql = "delete from policy_monitor.monitoring_policy where uuid='"+id+"'";//定义sql语句
+        String sql = "delete from policy_monitor.monitoring_policy where uuid='" + id + "'";//定义sql语句
 
         try {
             pstmt = (PreparedStatement) conn.prepareStatement(sql);
             i = pstmt.executeUpdate();
             pstmt.close();
             conn.close();
-        } catch (  SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         return i;
@@ -70,12 +68,11 @@ public class UserDao {
     }
 
     // 更新表字段
-    public int update(UserBean users)
-    {
-        int i=0;
+    public int update(UserBean users) {
+        int i = 0;
         DbUtil util = new DbUtil();
         PreparedStatement pstmt;
-        Connection conn=util.openConnection();//创建数据库连接
+        Connection conn = util.openConnection();//创建数据库连接
         String sql = "update Users set age='" + users.getAge() + "' where name='" + users.getName() + "'";
 //        String sql1="update policy_monitor.monitoring_policy set policy_name='"+users.getName()+"' where uuid='"+users.getId()+"'";
         try {
@@ -83,7 +80,7 @@ public class UserDao {
             i = pstmt.executeUpdate();
             pstmt.close();
             conn.close();
-        } catch (  SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         return i;
@@ -97,7 +94,7 @@ public class UserDao {
         String sql = "select * from Users";
         PreparedStatement pstmt;
         try {
-            pstmt = (PreparedStatement)conn.prepareStatement(sql);
+            pstmt = (PreparedStatement) conn.prepareStatement(sql);
             ResultSet rs = pstmt.executeQuery();
             int col = rs.getMetaData().getColumnCount();//列数
             System.out.println("============================");

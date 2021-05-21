@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact name="MavenProject:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MavenProject_jar</output-path>
+    <root id="root">
+      <element id="archive" name="MavenProject.jar">
+        <element id="module-output" name="MavenProject" />
+      </element>
+      <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.6.1" />
+      <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.9" />
+      <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.20" />
+    </root>
+  </artifact>
+</component>

@@ -1,5 +1,7 @@
 package Util;
 
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -8,7 +10,7 @@ import java.util.Properties;
 /**
  * @author yanbingHuang
  * @create 2020-06-2020/6/30 8:06 下午
- * myql DB的各种util 都在这个类中了
+ * mysql DB的各种util 都在这个类中了
  **/
 public class DbUtil {
 
@@ -19,6 +21,7 @@ public class DbUtil {
         String username=null;
         String url=null;
         String pwd=null;
+
         try{
           //properties文件这里要注意:
             // 1.target class目录下要有这个文件，
@@ -57,6 +60,11 @@ public class DbUtil {
         return connection;
     }
 
+
+    public void connect2(){
+        SqlSessionFactoryBuilder sqlSessionFactoryBuilder=new SqlSessionFactoryBuilder();
+//        InputStream is =
+    }
     //关闭数据库
     public void closeConn(Connection conn){
         try {
